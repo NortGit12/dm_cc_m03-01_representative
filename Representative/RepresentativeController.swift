@@ -16,6 +16,8 @@ class RepresentativeController {
     
     static private let resultsKey = "results"
     
+    static private let jsonSuffix = "&output=json"
+    
     // MARK: - Method(s)
     
     static func getRepresentativesByState(state: String, completion: ((representatives: [Representative]) -> Void)) {
@@ -26,7 +28,7 @@ class RepresentativeController {
         
         let urlParameters = ["state": "\(state)"]
         
-        NetworkController.performRequestForURL(url, httpMethod: .Get, urlParameters: urlParameters) { (data, error) in
+        NetworkController.performRequestForURL(url, httpMethod: .Get, urlParameters: urlParameters, jsonSuffix: jsonSuffix) { (data, error) in
             
             if let data = data, responseDataString = NSString(data: data, encoding: NSUTF8StringEncoding)  {
                 
