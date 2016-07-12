@@ -42,15 +42,33 @@ class StateListTableViewController: UITableViewController {
 
         return cell
     }
+    
+    // MARK: - Method(s)
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        
+        // How are we getting there?
+        if segue.identifier == "viewExistingReps" {
+            
+            // Where are we going?
+            if let stateDetailTableViewController = segue.destinationViewController as? StateDetailTableViewController {
+                
+                // What do we need to pack?
+                if let index = tableView.indexPathForSelectedRow?.row {
+                    
+                    let state = StateController.states[index]
+                    
+                    // Did we finish packing?
+                    stateDetailTableViewController.state = state
+                    
+                }
+            }
+        }
     }
-    */
+    
 
 }
