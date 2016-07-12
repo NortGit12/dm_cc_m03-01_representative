@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F3DF7E61D34946200D77CDC /* StateListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3DF7E51D34946200D77CDC /* StateListTableViewController.swift */; };
 		1F3F3ABA1D349159005C7155 /* RepresentativeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F3F3AB91D349159005C7155 /* RepresentativeViewController.swift */; };
 		1F8EE14F1D34308C00605C03 /* Representative.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8EE14E1D34308C00605C03 /* Representative.swift */; };
 		1F8EE1521D3435A300605C03 /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8EE1511D3435A300605C03 /* NetworkController.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F3DF7E51D34946200D77CDC /* StateListTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StateListTableViewController.swift; sourceTree = "<group>"; };
 		1F3F3AB91D349159005C7155 /* RepresentativeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RepresentativeViewController.swift; sourceTree = "<group>"; };
 		1F8EE14E1D34308C00605C03 /* Representative.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Representative.swift; sourceTree = "<group>"; };
 		1F8EE1511D3435A300605C03 /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
@@ -85,6 +87,7 @@
 		1F3DF7E41D34927F00D77CDC /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1F3DF7E51D34946200D77CDC /* StateListTableViewController.swift */,
 				1F3F3AB91D349159005C7155 /* RepresentativeViewController.swift */,
 			);
 			name = ViewController;
@@ -294,6 +297,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F8EE1521D3435A300605C03 /* NetworkController.swift in Sources */,
+				1F3DF7E61D34946200D77CDC /* StateListTableViewController.swift in Sources */,
 				1F8EE14F1D34308C00605C03 /* Representative.swift in Sources */,
 				1F3F3ABA1D349159005C7155 /* RepresentativeViewController.swift in Sources */,
 				68BABCFC1CD9ACCC001AC1FB /* StateController.swift in Sources */,
