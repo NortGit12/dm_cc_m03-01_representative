@@ -28,7 +28,7 @@ class Representative {
     private let officeKey = "office"
     private let linkKey = "link"
     
-    // MARK: - Intializer(s)
+    // MARK: - Initiaizer(s)
     
     init?(dictionary: [String : AnyObject]) {
         
@@ -38,8 +38,8 @@ class Representative {
             , district = dictionary[districtKey] as? String
             , phone = dictionary[phoneKey] as? String
             , office = dictionary[officeKey] as? String
-            , url = dictionary[linkKey] as? String
-        else { return nil }
+            , link = dictionary[linkKey] as? String
+            else { return nil }
         
         self.name = name
         self.party = party
@@ -47,7 +47,7 @@ class Representative {
         self.district = district
         self.phone = phone
         self.office = office
-        self.link = url
+        self.link = link
         
     }
     
