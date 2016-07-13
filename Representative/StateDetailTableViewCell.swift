@@ -38,10 +38,10 @@ class StateDetailTableViewCell: UITableViewCell {
     func updateWithRepresentative(representative: Representative) {
         
         nameLabel.text = representative.name
-        partyLabel.text = representative.party
-        districtLabel.text = representative.district
-        websiteLabel.text = representative.link
-        phoneLabel.text = representative.phone
+        partyLabel.text = "   Party: \(representative.party)"
+        districtLabel.text = "   District: \(representative.district)"
+        websiteLabel.text = "   Website: \(representative.link)"
+        phoneLabel.text = "   Phone: \(representative.phone)"
         
     }
 

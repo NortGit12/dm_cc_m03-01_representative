@@ -20,26 +20,11 @@ class StateDetailTableViewController: UITableViewController, CustomTableViewCell
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if state != nil {
+        if let state = state {
             
             UIApplication.sharedApplication().networkActivityIndicatorVisible = true
             
-            RepresentativeController.getRepresentativesByState("UT") { (representatives) in
-                
-                //                let repDetailsForDisplay = representatives.map{ "\($0.name)\n\tParty: \($0.party)\n\tState: \($0.state)\n\tDistrict: \($0.district)\n\tPhone: \($0.phone)\n\tOffice: \($0.office)\n\tLink: \($0.link)" }
-                //
-                //                var displayText = ""
-                //                var counter = 0
-                //                for repDetail in repDetailsForDisplay {
-                //
-                //                    if counter > 0 {
-                //                        displayText += "\n"
-                //                    }
-                //
-                //                    displayText += repDetail
-                //
-                //                    counter += 1
-                //                }
+            RepresentativeController.getRepresentativesByState(state) { (representatives) in
                 
                 dispatch_async(dispatch_get_main_queue(), {
                     

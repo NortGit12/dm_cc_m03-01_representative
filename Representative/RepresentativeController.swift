@@ -41,7 +41,10 @@ class RepresentativeController {
                     
                 }
                 
-                let representatives = resultsArrayOfDictionaries.flatMap{ Representative(dictionary: $0) }
+                var representatives = resultsArrayOfDictionaries.flatMap{ Representative(dictionary: $0) }
+                
+                representatives = representatives.sort{ $0.0.district < $0.1.district }
+                
                 completion(representatives: representatives)
                 
             } else {
