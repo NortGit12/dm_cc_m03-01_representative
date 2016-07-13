@@ -28,9 +28,9 @@ class StateDetailTableViewController: UITableViewController, CustomTableViewCell
                 
                 dispatch_async(dispatch_get_main_queue(), {
                     
-                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                     self.representatives = representatives
                     self.tableView.reloadData()
+                    UIApplication.sharedApplication().networkActivityIndicatorVisible = false
                     
                 })
                 
